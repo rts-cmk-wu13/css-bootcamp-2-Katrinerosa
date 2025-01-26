@@ -218,3 +218,107 @@ header .right i {
 .article-container .abonnement_offer a:hover {
   text-decoration: underline;
 }
+/* Styling for hele sektionen */
+.more {
+  text-align: center; /* Centrerer overskrift og linjer */
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 80%;
+}
+
+.more h4 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.more hr {
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+/* Styling for kasse-containeren */
+.forslag {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Centrer kasserne horisontalt */
+  flex-wrap: wrap; /* Tillad, at kasserne bryder til næste linje */
+  gap: 20px; /* Afstand mellem kasser */
+  margin-top: 20px;
+}
+
+/* Styling for individuelle kasser */
+.kasse {
+  display: flex;
+  flex-direction: column; /* Vertikalt layout inde i kassen */
+  align-items: center; /* Centrer indholdet horisontalt */
+  text-align: center; /* Centrer teksten */
+  width: 200px; /* Fast bredde for kasserne */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9; /* Lys baggrund for kassen */
+}
+
+/* Styling for billeder */
+.kasse img {
+  max-width: 100%; /* Gør billedet responsivt */
+  height: auto; /* Bevar proportionerne */
+  margin-bottom: 10px;
+}
+
+/* Styling for teksten i kasserne */
+.kasse span {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+}
+/* Styling for sektionen */
+.latest {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Plads mellem links og billedet */
+  align-items: flex-start; /* Juster indholdet til toppen */
+  gap: 20px; /* Afstand mellem links og billedet */
+  max-width: 80%; /* Begræns bredden */
+  margin: 20px auto; /* Centrer sektionen */
+  padding: 20px;
+  border: 1px solid #ccc; /* Let kant for struktur */
+}
+
+/* Styling for links containeren */
+.latest .News_links {
+  flex: 1; /* Links fylder en del af sektionen */
+  list-style: none; /* Fjern bullets */
+  padding: 0;
+}
+
+.latest .News_links li {
+  margin-bottom: 5px; /* Afstand mellem links */
+}
+
+.latest .News_links a {
+  text-decoration: none;
+  color: #201c1c; 
+  font-weight: bold;
+}
+
+.latest .News_links a:hover {
+  text-decoration: underline; /* Understregning ved hover */
+}
+
+.latest .News_links time {
+  display: block;
+  font-size: 0.5rem;
+  color: #555; /* Grå farve for dato */
+  margin-bottom: 5px;
+}
+
+/* Styling for billedet */
+.latest img {
+  flex: 1; /* Billedet fylder lige så meget som links */
+  max-width: 75%; /* Gør billedet responsivt */
+  height: auto; /* Bevar proportionerne */
+  border-radius: 5px; /* Bløde hjørner */
+  border: 1px solid #ddd; /* Let kant rundt om billedet */
+}
