@@ -1,5 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap");
+
 * {
-  margin: o auto;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Noto Serif Georgian", serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.8;
+  padding: 20px;
+}
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+}
+h1 {
+  font-size: 32px;
+}
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between; /* Fordel elementerne til venstre, midten og højre */
+  align-items: center; /* Vertikalt centrer elementerne */
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  position: relative; /* Gør det muligt at placere elementer absolut, hvis nødvendigt */
+}
 
+/* Venstre sektion (Menu og Søg) */
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Mellemrum mellem ikoner og tekst */
+}
+
+header .left i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Center sektion (H1 og navigation) */
+header .center {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Giv lidt luft mellem H1 og navigation */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centrer links */
+  gap: 20px; /* Mellemrum mellem links */
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: red; /* Hover-effekt */
+}
+
+/* Højre sektion (Log ind) */
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Mellemrum mellem tekst og ikon */
+}
+
+header .right h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header .right i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
