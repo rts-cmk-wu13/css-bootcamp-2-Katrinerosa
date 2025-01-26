@@ -94,3 +94,127 @@ header .right i {
   font-size: 1.2rem;
   cursor: pointer;
 }
+.brodtext {
+  display: flex;
+  flex-direction: column; /* Vertikalt layout */
+  align-items: center; /* Centrer indholdet horisontalt */
+  justify-content: center; /* Centrer indholdet vertikalt */
+  max-width: 70%; /* Fylder en tredjedel af siden */
+  margin: 0 auto; /* Centrer containeren horisontalt */
+  text-align: left; /* Sørg for, at teksten er venstrejusteret */
+  padding: 20px;
+  background-color: #f9f9f9; /* Baggrund for kontrast */
+  border: 1px solid #ddd; /* Let kant for struktur */
+  padding-top: 100px;
+}
+.brodtext section {
+  flex: 3; /* Sektionen fylder mest */
+}
+/* Styling for overskrift og tekst */
+.brodtext h4 span {
+  font-weight: bold;
+  color: #d9534f; /* Rød farve for at fremhæve abonnement */
+}
+
+.brodtext h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.brodtext p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Styling for billedet */
+.brodtext img {
+  max-width: 100%; /* Gør billedet responsivt */
+  height: auto;
+  margin-top: 20px;
+}
+/* Aside styling */
+.brodtext aside {
+  flex: 1;
+  border-right: 1px solid #ccc; /* Lodret linje mellem aside og tekst */
+  padding-right: 10px;
+  text-align: left; /* Justerer teksten i aside */
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+/* Styling for hele sektionen */
+.article-container {
+  display: flex;
+  flex-direction: column; /* Vertikalt layout */
+  align-items: center; /* Centrerer horisontalt */
+  justify-content: center; /* Centrerer vertikalt */
+  max-width: 50%; /* Fylder 50% af siden */
+  margin: 20px auto; /* Centrer sektionen horisontalt */
+  border: 1px solid #ccc; /* Kant for struktur */
+  padding: 20px;
+  background-color: #f9f9f9; /* Baggrund for kontrast */
+}
+
+/* Infoarticle styling */
+.article-container .infoarticle {
+  display: flex;
+  justify-content: space-between; /* Adskil tid og kommentarer */
+  width: 100%; /* Fylder hele bredden af sektionen */
+  margin-bottom: 10px;
+}
+
+.article-container .infoarticle time {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.article-container .infoarticle i,
+.article-container .infoarticle span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Artikeltekst */
+.article-container article p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Skjult sektion */
+.article-container article span[hidden] {
+  display: none; /* Skjul teksten som standard */
+}
+
+/* Synliggør skjult sektion ved hjælp af en ekstra klasse */
+.article-container.show article span[hidden] {
+  display: block; /* Vis teksten */
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px dashed #ddd; /* Indikerer skjult indhold */
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Abonnement-tilbud styling */
+.article-container .abonnement_offer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.article-container .abonnement_offer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.article-container .abonnement_offer a {
+  color: #d9534f; /* Rød farve for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article-container .abonnement_offer a:hover {
+  text-decoration: underline;
+}
