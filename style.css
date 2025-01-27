@@ -13,9 +13,8 @@ body {
   line-height: 1.8;
   padding: 20px;
 }
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #wrapper {
   max-width: 1200px;
@@ -32,7 +31,7 @@ header {
   padding: 10px 20px;
   border-bottom: 1px solid #ccc;
   background-color: white;
-  position: relative; 
+  position: relative;
 }
 /* Venstre sektion (Menu og Søg) */
 header .left {
@@ -71,7 +70,6 @@ header nav ul li a {
   font-size: 18px;
   text-transform: uppercase;
   color: black;
-  
 }
 
 header nav ul li a:hover {
@@ -100,12 +98,12 @@ header .right i {
   flex-direction: column; /* Vertikalt layout */
   align-items: center; /* Centrer indholdet horisontalt */
   justify-content: center; /* Centrer indholdet vertikalt */
-  max-width: 100%; 
+  max-width: 100%;
   margin: 0 auto; /* Centrer containeren horisontalt */
-  text-align: center; 
+  text-align: center;
   padding: 10px;
   background-color: #f9f9f9; /* Baggrund for kontrast */
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
   padding-top: 100px;
 }
 .brodtext section {
@@ -114,26 +112,31 @@ header .right i {
 .vedsiden {
   /* margin-top: 2em; */
   display: flex;
-  padding-top: 6em;
+
+  padding-top: 2em;
   /* max-width: 5%; */
+}
+.vedsiden p {
+  font-size: 10px;
 }
 /* Styling for overskrift og tekst */
 .brodtext h4 span {
   font-weight: bold;
-  font-size: 16px;
-  color: #d9534f; /* Rød farve for at fremhæve abonnement */
+  font-size: 18px;
+  color: #d9534f;
 }
 
 .brodtext h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 15px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .brodtext p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   line-height: 1.6;
+  font-size: 16px;
   color: #333;
 }
 
@@ -145,14 +148,15 @@ header .right i {
 }
 /* Aside styling */
 .brodtext aside {
-  flex: 1;
-  
+  /* flex: 1; */
   padding-right: 10px;
-  text-align: left; /* Justerer teksten i aside */
-  font-size: 0.9rem;
+  text-align: right;
+  font-size: 10px;
   line-height: 1.4;
 }
-/* Styling for hele sektionen */
+aside p {
+  font-size: 10px;
+}
 .article-container {
   display: flex;
   flex-direction: column; /* Vertikalt layout */
@@ -192,9 +196,8 @@ header .right i {
 
 /* Skjult sektion */
 .article-container article span[hidden] {
-  display: none; /* Skjul teksten som standard */
+  display: none; 
 }
-
 /* Synliggør skjult sektion ved hjælp af en ekstra klasse */
 .article-container.show article span[hidden] {
   display: block; /* Vis teksten */
@@ -338,7 +341,7 @@ header .right i {
     flex-direction: column;
     align-items: center;
   }
-  .brodtext img{
+  .brodtext img {
     max-width: 100%;
   }
 
