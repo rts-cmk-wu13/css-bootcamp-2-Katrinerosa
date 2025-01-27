@@ -26,7 +26,7 @@ h1 {
 /* Header styling */
 header {
   display: flex;
-  justify-content: space-between; /* Fordel elementerne til venstre, midten og højre */
+  justify-content: space-between; 
   align-items: center; /* Vertikalt centrer elementerne */
   padding: 10px 20px;
   border-bottom: 1px solid #ccc;
@@ -96,7 +96,7 @@ header .right i {
 .brodtext {
   display: flex;
   flex-direction: column; /* Vertikalt layout */
-  align-items: center; /* Centrer indholdet horisontalt */
+  align-items: center; 
   justify-content: center; /* Centrer indholdet vertikalt */
   max-width: 100%;
   margin: 0 auto; /* Centrer containeren horisontalt */
@@ -159,14 +159,14 @@ aside p {
 }
 .article-container {
   display: flex;
-  flex-direction: column; /* Vertikalt layout */
+  flex-direction: column;
   align-items: center; /* Centrerer horisontalt */
-  justify-content: center; /* Centrerer vertikalt */
+  justify-content: center; 
   max-width: 50%; /* Fylder 50% af siden */
-  margin: 20px auto; /* Centrer sektionen horisontalt */
-  border: 1px solid #ccc; /* Kant for struktur */
+  margin: 20px auto; 
+  border: 1px solid #ccc; 
   padding: 20px;
-  background-color: #f9f9f9; /* Baggrund for kontrast */
+  background-color: #f9f9f9; 
 }
 
 /* Infoarticle styling */
@@ -253,23 +253,23 @@ aside p {
 
 /* Styling for kasse-containeren */
 .forslag {
-  display: flex; /* Flexbox layout */
+  display: flex; 
   justify-content: center; /* Centrer kasserne horisontalt */
   flex-wrap: wrap; /* Tillad, at kasserne bryder til næste linje */
-  gap: 20px; /* Afstand mellem kasser */
+  gap: 20px; 
   margin-top: 20px;
 }
 
 /* Styling for individuelle kasser */
 .kasse {
   display: flex;
-  flex-direction: column; /* Vertikalt layout inde i kassen */
-  align-items: center; /* Centrer indholdet horisontalt */
-  text-align: center; /* Centrer teksten */
-  width: 200px; /* Fast bredde for kasserne */
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  width: 200px;
   padding: 10px;
   border: 1px solid #ccc;
-  background-color: #f9f9f9; /* Lys baggrund for kassen */
+  background-color: #f9f9f9; 
 }
 
 /* Styling for billeder */
@@ -285,20 +285,20 @@ aside p {
   line-height: 1.4;
   color: #333;
 }
-/* Styling for sektionen */
+/* Styling  */
 .latest {
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Plads mellem links og billedet */
-  align-items: flex-start; /* Juster indholdet til toppen */
-  gap: 20px; /* Afstand mellem links og billedet */
-  max-width: 80%; /* Begræns bredden */
-  margin: 20px auto; /* Centrer sektionen */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 20px; 
+  max-width: 80%;
+  margin: 20px auto; 
   padding: 20px;
   border: 1px solid #ccc;
   list-style: none;
 }
 
-/* Styling for links containeren */
+
 .latest .News_links {
   flex: 1; /* Links fylder en del af sektionen */
   list-style: none; /* Fjern bullets */
@@ -331,9 +331,8 @@ aside p {
 .latest img {
   flex: 1; /* Billedet fylder lige så meget som links */
   max-width: 75%;
-  height: auto; /* Bevar proportionerne */
-
-  border: 1px solid #ddd; /* Let kant rundt om billedet */
+  height: auto; 
+  border: 1px solid #ddd; 
 }
 @media screen and (max-width: 1000px) {
   .brodtext {
