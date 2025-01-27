@@ -7,11 +7,15 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Noto Serif Georgian", serif;
+  font-family: "Space Grotesk";
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.8;
   padding: 20px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
 }
 #wrapper {
   max-width: 1200px;
@@ -19,9 +23,7 @@ body {
   background-color: white;
   padding: 20px;
 }
-h1 {
-  font-size: 32px;
-}
+
 /* Header styling */
 header {
   display: flex;
@@ -30,9 +32,8 @@ header {
   padding: 10px 20px;
   border-bottom: 1px solid #ccc;
   background-color: white;
-  position: relative; /* Gør det muligt at placere elementer absolut, hvis nødvendigt */
+  position: relative; 
 }
-
 /* Venstre sektion (Menu og Søg) */
 header .left {
   display: flex;
@@ -51,8 +52,8 @@ header .center {
 }
 
 header h1 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: bolder;
   margin-bottom: 5px; /* Giv lidt luft mellem H1 og navigation */
 }
 
@@ -60,17 +61,17 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: center; /* Centrer links */
-  gap: 20px; /* Mellemrum mellem links */
+  gap: 30px; /* Mellemrum mellem links */
   padding: 0;
 }
 
 header nav ul li a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   text-transform: uppercase;
   color: black;
-  transition: color 0.3s ease;
+  
 }
 
 header nav ul li a:hover {
@@ -99,26 +100,27 @@ header .right i {
   flex-direction: column; /* Vertikalt layout */
   align-items: center; /* Centrer indholdet horisontalt */
   justify-content: center; /* Centrer indholdet vertikalt */
-  max-width: 70%; /* Fylder en tredjedel af siden */
+  max-width: 100%; 
   margin: 0 auto; /* Centrer containeren horisontalt */
-  text-align: left; /* Sørg for, at teksten er venstrejusteret */
-  padding: 20px;
+  text-align: center; 
+  padding: 10px;
   background-color: #f9f9f9; /* Baggrund for kontrast */
-  border: 1px solid #ddd; /* Let kant for struktur */
+  border: 1px solid #ddd; 
   padding-top: 100px;
 }
 .brodtext section {
-  flex: 3; /* Sektionen fylder mest */
+  text-align: right;
 }
-.vedsiden{
-    /* margin-top: 2em; */
-    display: flex;
-    padding-top: 6em;
-    /* max-width: 5%; */
+.vedsiden {
+  /* margin-top: 2em; */
+  display: flex;
+  padding-top: 6em;
+  /* max-width: 5%; */
 }
 /* Styling for overskrift og tekst */
 .brodtext h4 span {
   font-weight: bold;
+  font-size: 16px;
   color: #d9534f; /* Rød farve for at fremhæve abonnement */
 }
 
@@ -137,14 +139,14 @@ header .right i {
 
 /* Styling for billedet */
 .brodtext img {
-  max-width: 70%; /* Gør billedet responsivt */
+  max-width: 100%; /* Gør billedet responsivt */
   height: auto;
   /* margin-top: 20px; */
 }
 /* Aside styling */
 .brodtext aside {
   flex: 1;
-  border-right: 1px solid #ccc; /* Lodret linje mellem aside og tekst */
+  
   padding-right: 10px;
   text-align: left; /* Justerer teksten i aside */
   font-size: 0.9rem;
@@ -331,10 +333,24 @@ header .right i {
   border: 1px solid #ddd; /* Let kant rundt om billedet */
 }
 @media screen and (max-width: 1000px) {
+  .brodtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brodtext img{
+    max-width: 100%;
+  }
+
   .latest {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
+  .vedsiden {
+    flex-direction: column;
+  }
+
   .News_links p {
     align-items: center;
   }
